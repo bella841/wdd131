@@ -81,11 +81,10 @@ img {
     
 }
 
-header {
-    a {
+header a {
         display: block;
     }
-}
+
 
 
 footer {
@@ -105,11 +104,10 @@ footer {
         text-align: center;
     }
 
-    header {
-        a {
+    header a {
             display: none;
         }
-    }
+    
 
 
 }
@@ -121,11 +119,10 @@ footer {
         text-align: center;
     
     }
-    header {
-        a {
+    header a {
             display: inline;
         }
-    }
+    
 
     .gallery figure {
         display: flex;
