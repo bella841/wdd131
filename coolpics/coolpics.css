@@ -13,8 +13,10 @@
 * {
     margin: 0;
     text-align: center;
-    
+    overflow-x: hidden;
+   
 }
+
 main {
     max-width: 100%;
     padding: 10px;
