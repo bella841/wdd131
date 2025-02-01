@@ -6,21 +6,23 @@
     <meta name="description" content="Cool Pics Page">
     <meta name="author" content="Isabella Carmen">
     <link rel="stylesheet" href="coolpics.css">
-    <script rel="javascript" href="coolpics.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="coolpics.js" defer></script>
     <title>Cool Pics 📷</title>
 </head>
 <body>
-    <div class="viewer">
-        <button class="close-viewer">X</button>
+    <div class="viewer" id="image-viewer">
+        <button class="close-viewer" id="close-btn">X</button>
         <img src="norris-full.jpeg" alt="full photo" class="large-image">
     </div>
+
     <header>
         <nav>
             <h1>Cool Pics 📷</h1>
             <br>
             <h2><button type="button" class="button">Menu</button></h2>
             <br>
-            <div class="nav">
+            <div class="menu hide"> 
                 <a href="#">Home</a>
                 <a href="#">People</a>
                 <a href="#">Places</a>

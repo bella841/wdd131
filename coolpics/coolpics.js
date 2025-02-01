@@ -1,31 +1,66 @@
-const menubutton = document.querySelector(".menu-button");
-function toggleMenu() {
-    const menu = document.querySelector(".menu")
-    menu.classList.toggle("hide");
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const menubutton = document.querySelector(".button");
+    const menu = document.querySelector(".menu");
 
-menubutton.addEventListener("click", toggleMenu)
-
-function handleResize() {
-    const menu =  document.querySelector(".menu");
-    if (window.innerWidth > 1000) {
-        menu.classList.remove("hide");
+    function toggleMenu() {
+        if (window.innerWidth >= 700 && window.innerWidth < 1000) {
+            menu.classList.toggle("hide");
+        }
     }
-    else {
-        menu.classList.add("hide");
+
+    function handleResize() {
+        if (window.innerWidth < 700) {
+            menu.classList.remove("hide"); 
+        } else if (window.innerWidth >= 700 && window.innerWidth < 1000) {
+            menu.classList.add("hide");
+        } else {
+            menu.classList.remove("hide"); 
+        }
     }
-}
 
-handleResize(); 
-window.addEventListener.add("resize", handleResize)
+  
 
-function viewerTemplate(pic, alt) {
-    return div `class="viewer">
-    <button class="close-viewer">X</button>
-    <img src="${pic}" alt="${alt}" class="large-image">
-</div>`;
-}
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
-function viewHandler(event) {
-    
-}
+  
+    function viewHandler(event) {
+        const clickedElement = event.target;
+        
+        if (!clickedElement.classList.contains("pic")) return;
+
+        const srcArray = clickedElement.src.split("-");
+        const fullImageSrc = srcArray[0] + "-norris-full.jpeg";
+
+        const viewerTemplate = `
+        <div id="image-viewer" class="viewer">
+            <button id="close-btn" class="close-viewer">X</button>
+            <img src="${fullImageSrc}" alt="Full Image" class="large-image">
+        </div>`;
+
+        document.body.insertAdjacentHTML("afterbegin", viewerTemplate);
+
+        document.getElementById("close-btn").addEventListener("click", function (event) {
+            event.stopPropagation();
+            closeViewer();
+        });
+    }
+
+    function closeViewer() {
+        const viewer = document.getElementById("image-viewer");
+        if (viewer) {
+            viewer.remove();
+        }
+    }
+
+    document.querySelectorAll(".pic").forEach(img => {
+        img.addEventListener("click", viewHandler);
+    });
+
+    document.body.addEventListener("click", function (event) {
+        const viewer = document.getElementById("image-viewer");
+        if (viewer && !event.target.closest(".large-image") && !event.target.closest(".close-viewer")) {
+            closeViewer();
+        }
+    });
+});
