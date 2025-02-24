@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .container {
+    position: relative;
+    width: 400px;
+  }
+
+ 
+  
+  .card {
+    background: lightgray; 
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+  }
+  
+
+  .front {
+    z-index: 2;
+    top: -10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .back {
+    top: 10px; 
+    left: 275px;
+    z-index: 1;
+    width: 240px;
+    height: 200px;
+    
+  }
+  
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-size: 16px;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+
+  .row {
+    display: flex;
+    gap: 50px;
+  }
+
+
+  
+
+  .expirationcontainer {
+    flex: 1;
+  }
+  
+
+  .experation {
+    display: flex;
+    gap: 5px;
+  }
+  
+
+  button {
+    margin-top: 80px;
+    margin-left: 150px;
+    width: 100px;
+    padding: 10px;
+    background: lightgray; 
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+  .blackstrip {
+    background: darkslategrey;
+    height: 40px;
+    width: 260px;
+    margin-bottom: 10px;
+  }
+  
+  
+  #cvv {
+    width: 50px;
+    float: right;
+    margin-top: 60px;
+    
+    
+  }
+
+.cvctext {
+    position: relative;
+    margin-left: 170px;
+    top:50px;
+    display: block;
+
+
+}
+
+.imagetext {
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+
+.card-image {
+    height: 60px; 
+    width: auto;
+    margin-left: 10px; 
+}
+

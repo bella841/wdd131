@@ -13,46 +13,42 @@
       <section class="errors"></section>
       <form id="checkoutForm" action="completed.html">
         <label for="fullName">Full Name:</label>
-        <input id="fullName" 
-        name="fullName" 
-        type="text"
-        required/>
+        <input id="fullName" name="fullName" type="text" required />
 
         <label for="email">Email:</label>
-        <input id="email" 
-        name="email" 
-        type="text"
-        required
-        />
+        <input id="email" name="email" type="email" required />
 
         <label for="address">Address:</label>
-        <textarea id="address" name="fullName" rows="3" required> 
-      </textarea>
+        <textarea id="address" name="address" rows="3" required></textarea>
 
-        <label for="payment">Payment Method:</label>
-        <select id="payment" name="payment" required>
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="payment" required>
           <option value="">Select Payment Method</option>
           <option value="creditcard">Credit Card</option>
           <option value="paypal">Paypal</option>
         </select>
-        <div class="hide">
-        <label for="creditcardnumber">Credit Card Number:</label>
-        <input id="creditcardnumber" 
-        name="creditcardnumber" 
-        type="text" 
-        pattern="[0-9]{16}"
-        required
-        placeholder="Enter 16 digits"
-        /></div>
-        
-        <div class="hide">
-        <label for="paypaluser">PayPal Username:</label>
-        <input id="paypaluser" 
-        name="paypaluser" 
-        type="text" 
-        placeholder="Enter Paypal Username"
-        required 
-        /></div>
+
+        <div id="creditCardNumberContainer" class="hide">
+          <label for="creditCardNumber">Credit Card Number:</label>
+          <input
+            id="creditCardNumber"
+            name="creditCardNumber"
+            type="text"
+            pattern="[0-9]{16}"
+            placeholder="Enter 16 digits"
+          />
+        </div>
+
+        <div id="paypalUsernameContainer" class="hide">
+          <label for="paypalUsername">PayPal Username:</label>
+          <input
+            id="paypalUsername"
+            name="paypalUsername"
+            type="text"
+            placeholder="Enter PayPal Username"
+          />
+        </div>
+
         <button type="submit">Place Order</button>
       </form>
     </main>
