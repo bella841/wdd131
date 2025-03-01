@@ -18,12 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-  
-
     handleResize();
     window.addEventListener("resize", handleResize);
 
-  
     function viewHandler(event) {
         const clickedElement = event.target;
         
@@ -39,11 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>`;
 
         document.body.insertAdjacentHTML("afterbegin", viewerTemplate);
-
-        document.getElementById("close-btn").addEventListener("click", function (event) {
-            event.stopPropagation();
-            closeViewer();
-        });
     }
 
     function closeViewer() {
@@ -57,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
         img.addEventListener("click", viewHandler);
     });
 
+
     document.body.addEventListener("click", function (event) {
-        const viewer = document.getElementById("image-viewer");
-        if (viewer && !event.target.closest(".large-image") && !event.target.closest(".close-viewer")) {
+        if (event.target.classList.contains("close-viewer")) {
             closeViewer();
         }
     });
