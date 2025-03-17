@@ -101,6 +101,17 @@ h1 {
     margin: 10px 0;
 }
 
+.recipe-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.recipe-tag {
+    color: black;
+    font-size: 16px;
+}
+
 .rating {
     font-size: 18px;
     text-align: left;
@@ -181,6 +192,8 @@ footer {
 
 
     
+
+
 
 
 }
