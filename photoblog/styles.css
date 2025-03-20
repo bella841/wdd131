@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-size: 22px;
+    font-family: Rubik;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+header {
+    background-color:#003459;
+    font-family: Rubik, Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 100px auto;
+    padding: 5px 10px;
+    }
+    
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin: 0;
+    }
+
+nav a:hover {
+    background-color: white;
+    color: #003459;
+    border-radius: 7px;
+    }
+
+.grid-container1, .grid-container2, .grid-container3 {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    }
+    
+.imageshome1, .imageshome2, .imageshome3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    gap: 10px;
+    border-radius: 7px;
+
+}
+
+
+
+h1 {
+    font-family: Rubik;
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 1.5px  1.5px grey;
+}
+p {
+    font-family: Itim;
+    text-align: center;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+.polaroidhome1, .polaroidhome2, .polaroidhome3, .polaroidhome4, .polaroidhome5, .polaroidhome6 {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 7px;
+    max-width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px 30px 20px;
+}
+
+.polaroidhome1 img, .polaroidhome2 img, .polaroidhome3 img, .polaroidhome4 img, .polaroidhome5 img, .polaroidhome6 img {
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+.polaroid-texthome1, .polaroid-texthome2, .polaroid-texthome3, .polaroid-texthome4, .polaroid-texthome5, .polaroid-texthome6 {
+    font-family: Itim, Verdana, sans-serif; 
+    font-size: 20px; 
+}
+
+footer {
+    background-color: #003459;
+    color:white;
+    font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Rubik;
+
+    }
+
+
+    /* info styles */
+
+    .title {
+        text-align: center;
+        font-family: Rubik, Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+    }
+    .gridcontainer1, .gridcontainer2, .gridcontainer3, .gridcontainer4, .gridcontainer5 {
+        display:grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+    
+    }
+    
+    .place1, .place2, .place3, .place4, .place5 {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    
+    .caption, .caption1, .caption2, .caption3, .caption4, .caption5 {
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: Itim, Verdana, sans-serif;
+        
+    }
+    .paragraph1, .paragraph2, .paragraph3, .paragraph4, .paragraph5 {
+        font-size: 20px;
+        padding: 60px;
+        font-family: Itim, Verdana, sans-serif;
+    }
+    
+    
+    .image1, .image2, .image3, .image4, .image5 {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 7px;
+        box-shadow: 5px 5px 10px #153646;
+        width: 80%;
+    }
+
+    .bulgariaimagecard:hover, .ecuadorimagecard:hover, .italyimagecard:hover, .franceimagecard:hover, .greeceimagecard:hover {
+        opacity: .8;
+        transform: scale(1.02);
+
+    }
+
+/* Bulgaria Stylesheet */
+
+.bulgariahero {
+    width: 80%; /* You can keep this as 80% for the image width */
+    max-width: 1000px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px #153646;
+    margin: 0 auto;
+}
+
+.containerbulg1
+{
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: auto; 
+    padding: 30px;
+}
+
+.paragraphbulg1, .paragraphbulg2, .paragraphbulg3, .paragraphbulg4 {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.imagesbulg1, .imagesbulg2, .imagesbulg3, .imagesbulg4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    gap: 10px;
+    border-radius: 7px;
+    
+
+}
+
+
+.polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9, .polaroid10, .polaroid11, .polaroid12 {
+    text-align: center;
+    padding: 20px 20px 30px 20px;
+    border-radius: 7px;
+    max-width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.polaroid1 img, .polaroid2 img, .polaroid3 img, .polaroid4 img, .polaroid5 img, .polaroid6 img, .polaroid7 img, .polaroid8 img, .polaroid9 img, .polaroid10 img, .polaroid11 img, .polaroid12 img {
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+.polaroid-text1, .polaroid-text2, .polaroid-text3, .polaroid-text4, .polaroid-text5, .polaroid-text6, .polaroid-text7, .polaroid-text8, .polaroid-text9, .polaroid-text10, .polaroid-text11 {
+    font-family: Itim, Verdana, sans-serif; 
+    font-size: 20px;
+    align-items: center;
+
+}
+
+
+.tips {
+    font-family: Rubik, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+ul {
+    font-family: Itim, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.containerbulg2 {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
