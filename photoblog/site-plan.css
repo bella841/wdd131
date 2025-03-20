@@ -106,8 +106,10 @@ nav {
   font-size: 1.2em;
 }
 nav  {
-  list-style-type: none;
+
   display: flex;
+  align-items: center;
+  gap: 10px;
 
 }
 nav a {
@@ -175,3 +177,21 @@ nav a:hover {
 }
 
 
+#search {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+#searchbutton {
+  padding: 5px 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#searchbutton:hover {
+  background-color: #0056b3;
+}
