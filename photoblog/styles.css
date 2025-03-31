@@ -249,3 +249,45 @@ ul {
 
 }
 
+
+body {
+    font-family: Itim, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.searchbar {
+    margin-bottom: 20px;
+
+}
+
+#searchBox {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-container {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-info {
+    margin-top: 10px;
+}
