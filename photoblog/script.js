@@ -221,12 +221,12 @@ function displayImages(images_display) {
 function filterImages() {
     const searchQuery = document.getElementById("searchBox").value.toLowerCase();
 
-    const filteredImages = images.filter(image => {
+    const filterimage = images.filter(image => {
         return image.tags.some(tag => tag.toLowerCase().includes(searchQuery)) || 
                image.rating.toString().includes(searchQuery);
     });
 
-    displayImages(filteredImages);
+    displayImages(filterimage);
 }
 
 window.onload = function() {
