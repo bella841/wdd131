@@ -256,22 +256,24 @@ body {
 }
 
 .searchbar {
-    margin-bottom: 20px;
 
+    margin-top: 50px; 
+    margin-bottom: 50px;
 }
 
 #searchBox {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
+    border: 1px solid rgb(155, 151, 151);
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(82, 81, 81, 0.3);
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 .image-container {
@@ -279,7 +281,7 @@ body {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 10px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .image-container img {
@@ -291,3 +293,4 @@ body {
 .image-info {
     margin-top: 10px;
 }
+
