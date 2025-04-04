@@ -182,7 +182,7 @@ function displayimg(imagesdisplay) {
     gallery.innerHTML = ''; 
 
     if (imagesdisplay.length == 0) 
-        { gallery.innerHTML = "No images were found. To get results searach for tag or rating";
+        { gallery.innerHTML = "No images were found. To get results search for tag or rating";
 
     }
 
