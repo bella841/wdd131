@@ -216,6 +216,7 @@ function displayimg(imagesdisplay) {
 
         const rating = document.createElement("div");
 
+        
         rating.classList.add("image-rating");
 
         rating.innerHTML = `Rating: ${"⭐".repeat(image.rating)}${"☆".repeat(5 - image.rating)}`;
@@ -253,8 +254,8 @@ function filterImages() {
     displayimg(filterimage);
 }
 
-window.onload = function() {
-    displayimg(images); 
+window.onload = function() 
+{ displayimg(images); 
     const searchbox = document.getElementById("searchbox");
     searchbox.addEventListener("input", filterImages); 
 };
