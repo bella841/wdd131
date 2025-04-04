@@ -177,60 +177,84 @@ const images = [
     }
 ];
 
-function displayImages(images_display) {
+function displayimg(imagesdisplay) {
     const gallery = document.querySelector(".gallery");
     gallery.innerHTML = ''; 
 
-    if (images_display.length === 0) {
-        gallery.innerHTML = "No images were found. Search for a tag or rating."; 
+    if (imagesdisplay.length == 0) 
+        { gallery.innerHTML = "No images were found. Search for a tag or rating.";
+
     }
 
-    images_display.forEach(image => {
+    imagesdisplay.forEach(image => {
         const imagediv = document.createElement("div");
         imagediv.classList.add("image-container");
+
+
 
         const img = document.createElement("img");
         img.src = image.src; 
         img.alt = image.alt; 
 
+        
+
         const caption = document.createElement("div");
+
         caption.classList.add("image-info");
+
         caption.innerText = image.alt;
 
+
+
         const tags = document.createElement("div");
+
         tags.classList.add("image-tags");
+
         tags.innerHTML = `Tags: ${image.tags.join(", ")}`;
 
+
+
         const rating = document.createElement("div");
+
         rating.classList.add("image-rating");
+
         rating.innerHTML = `Rating: ${"⭐".repeat(image.rating)}${"☆".repeat(5 - image.rating)}`;
 
+
         const link = document.createElement("a");
+
         link.href = image.link;
+
         link.innerText = "See Page";
 
         imagediv.appendChild(img);
+        imagediv.appendChild(rating);
         imagediv.appendChild(caption);
         imagediv.appendChild(tags);
-        imagediv.appendChild(rating);
         imagediv.appendChild(link);
         gallery.appendChild(imagediv);
+
+
     });
 }
 
+
+
 function filterImages() {
-    const searchQuery = document.getElementById("searchBox").value.toLowerCase();
+    const searchQuery = document.getElementById("searchbox").value;
 
     const filterimage = images.filter(image => {
-        return image.tags.some(tag => tag.toLowerCase().includes(searchQuery)) || 
-               image.rating.toString().includes(searchQuery);
+        return image.tags.some(tag => tag.toLowerCase().includes(searchQuery))|| 
+        
+            
+        image.rating.toString().includes(searchQuery);
     });
 
-    displayImages(filterimage);
+    displayimg(filterimage);
 }
 
 window.onload = function() {
-    displayImages(images); 
-    const searchBox = document.getElementById("searchBox");
-    searchBox.addEventListener("input", filterImages); 
+    displayimg(images); 
+    const searchbox = document.getElementById("searchbox");
+    searchbox.addEventListener("input", filterImages); 
 };
